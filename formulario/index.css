@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root
+{
+    --st-patricks-blue: #173679;
+    --maastricht-blue: #0B1E38;
+    --cyan-blue-azure: #4888C8;
+    --carrot-orange: #DB901C;
+    --booger-buster:  #E8E163;
+    --letter: #f8f9fa;
+}
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins' sans-serif;
+}
+::before,::after
+{
+box-sizing: border-box;
+}
+/* Vídeo no background */
+.banner
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner video
+{
+   position: fixed;
+   top: 0;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+/* Início Formulário */
+.container 
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 5em;
+}
+.Cadastro
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    width: 50em;
+    border-radius: 4rem;
+    box-shadow: #E8E163;
+    z-index: 1;
+    font-family: 'Clicker Script' , cursive; 
+}
+.Cadastro::before
+{
+        content: '';
+        width: 40em;
+        height: 80px;
+        border-top: 5px solid var(--carrot-orange) ;
+        border-right: 5px solid var(--booger-buster);
+        top: 0;
+        right:0;
+}
+.Cadastro::after
+{
+        content: '';
+        width: 40em;
+        height: 80px;
+        border-bottom: 5px solid var(--carrot-orange) ;
+        border-left: 5px solid var(--booger-buster);
+        bottom: 0;
+        left:0;
+}
+h1
+{
+    margin-bottom: 50px;
+    color: var(--booger-buster);
+    border-radius: 4rem;
+}
+ h1::before
+{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--carrot-orange) ;
+    border-left: 5px solid var(--booger-buster);
+    top: 0;
+    right:0;
+    padding-left: 10px;
+}
+h1::after
+{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--carrot-orange) ;
+    border-right: 5px solid var(--booger-buster);
+    bottom: 0;
+    left:0;
+    padding-right: 10px;
+}
+/* INPUT */
+input
+{
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    width: 30em;
+    background-color: #173679;
+    background: transparent;
+    border: solid var(--carrot-orange);
+    backdrop-filter: blur(2vh);
+}
+input::placeholder
+{
+    color: var(--letter);
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+input:focus,
+input:valid
+{
+    color: var(--letter);
+    border: 4px solid var(--booger-buster);
+}
+input:focus::placeholder,
+input:valid::placeholder
+{
+    color: var(--letter);
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-15px -16px) scale(0.88);
+    transition: all 0.5s ease;
+    z-index: 1111;
+    padding: 0 12px;
+}
+/* BUTTON */
+ button:hover
+{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+button
+{
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    border-radius: 100px;
+    width: 30em;
+    background-color: #173679;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(2vh);
+    background: transparent;
+}
+button span
+{
+   color: #E8E163;
+   font-size: 20px;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
